@@ -21,7 +21,7 @@ $(tput setaf 6)╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═�
 }
 
 function forceStuffs {
-  curl -O https://cdn.discordapp.com/attachments/946264593746001960/969858011357151252/FE_1.png
+  curl -O https://raw.githubusercontent.com/dinomocloudhosting/Dinomo-ptero-multi-egg/main/LineTech_3.png
   
   echo "motd=Powered by Dinomo Hosting | Change this motd in server.properties" >> server.properties
 }
