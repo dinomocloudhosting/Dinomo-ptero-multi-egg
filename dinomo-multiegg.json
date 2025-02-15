@@ -19,7 +19,7 @@
         "server-icon.png",
         "install.sh"
     ],
-    "startup": "bash <(curl -s https://github.com/dinomocloudhosting/Dinomo-ptero-multi-egg/blob/main/install.sh)",
+    "startup": "bash <(curl -s https://raw.githubusercontent.com/dinomocloudhosting/Dinomo-ptero-multi-egg/main/install.sh)",
     "config": {
         "files": {
             "server.properties": {
@@ -52,7 +52,7 @@
     "variables": [
         {
             "name": "Minecraft Version",
-            "description": "The version of Minecraft to download.\n\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "description": "The version of Minecraft to download. Leave at latest to always get the latest version. Invalid versions will default to latest.",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -79,7 +79,7 @@
         },
         {
             "name": "Build Number",
-            "description": "The build number for the Paper release.\n\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "description": "The build number for the PaperMC release. Leave at latest to always get the latest version.",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,
@@ -87,8 +87,8 @@
             "rules": "required|string|max:20"
         },
         {
-            "name": "NodeJS",
-            "description": "NodeJS version",
+            "name": "NodeJS Version",
+            "description": "NodeJS version to use.",
             "env_variable": "NODEJS_VERSION",
             "default_value": "14",
             "user_viewable": true,
